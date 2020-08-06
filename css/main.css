@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GOT_font';
+    src: url('Game_of_Thrones.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	font-size:16px; 
+	background-image: url(../images/grungeBG.jpg);
+}
+
+
+#main-title{
+  font-family: 'GOT_font';
+  font-size: 40px;
+  color: #ffffff;
+  margin: 20px auto;
+}
+
+h1 {
+	font-family: 'GOT_font';
+	color: #f1f1f1;
+	margin:20px auto;
+	font-size:30px;
+	text-transform: uppercase;
+}
+
+main {
+	position:relative;
+	width:100%;
+	text-align:center;
+	top:30px;
+}
+
+#imageContainer {
+	width:600px;
+	height:360px;
+	background-color:grey;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#houseImages { position:relative; width:5400px; transition: all .5s; }
+#houseImages img { float:left; }
+
+.house-info {
+	color: #f1f1f1;
+	width: 80%;
+	font-size: 1.25em;
+	line-height: 1.25em;
+	margin: 0 auto;
+}
+
+#mainNav { margin-top:30px; }
+
+#navList li {
+	display:inline;
+	list-style-type:none;
+	padding:0px 10px;
+	cursor:pointer;
+}
+
+.sigilContain {
+	width:51px;
+	height:54px;
+	display:inline-block;
+	overflow:hidden;
+	background-image:url(../images/GOT_HOUSE.png);
+	background-repeat:no-repeat;
+	transition:transform .5s;
+	-webkit-transition:-webkit-transform .5s;
+	-moz-transition:-moz-transform .5s;
+}
+
+.stark { background-position:0px -54px; }
+.stark:hover { background-position:0px 0px; }
+
+.baratheon { background-position:-50.5px -54px; }
+.baratheon:hover { background-position:-51px 0px; }
+
+.lannister { background-position:-101px -54px; }
+.lannister:hover { background-position:-101px 0px; }
+
+.tully { background-position:-152px -54px; }
+.tully:hover { background-position:-152px 0px; }
+
+.greyjoy { background-position:-202px -54px; }
+.greyjoy:hover { background-position:-202px 0px; }
+
+.arryn { background-position:-253px -54px; }
+.arryn:hover { background-position:-253px 0px; }
+
+.targaryen { background-position:-304px -54px; }
+.targaryen:hover { background-position:-304px 0px; }
+
+.frey { background-position:-355px -54px; }
+.frey:hover { background-position:-355px 0px; }
+
+.tyrell { background-position:-406px -54px; }
+.tyrell:hover { background-position:-406px 0px; }
+
+.scaleUp {
+	-moz-transform:scale(1.7, 1.7);
+	-webkit-transform:scale(1.7, 1.7);
+	transform:scale(1.7, 1.7);
+}
+
+.scaleHalfUp {
+	-moz-transform:scale(1.2, 1.2);
+	-webkit-transform:scale(1.2, 1.2);
+	transform:scale(1.2, 1.2);
+}
+
+video {
+	width: 80%;
+	margin: 5% auto 0% auto;
+	display: block;
+}
+
+.video-controls {
+	width: 70%;
+	margin: 0 auto;
+	text-align: left;
+	background-color: rgba(36, 37, 32, 0.8);
+	display: flex;
+	flex-direction: row;
+}
+
+.video-controls button {
+	width: 5%;
+	background: transparent;
+	border: 0px;
+	cursor: pointer;
+}
+
+.video-controls i {
+	color: #ec1111;
+	font-size: 2em;
+	line-height: 2em;
+}
+
+#progress-bar {
+	width: 60%;
+}
+
+#time {
+	width: 15%;
+	color: #ffffff;
+	text-align: center;
+	line-height: 2em;
+	padding-top: 8px;
+}
+
+#volume-slider {
+	width: 10%;
+}
+
+.lightbox {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	background-color: black;
+	background-position: cover;
+	display: none;
+}
+
+.show-lightbox { display: block; }
+
+.close-lightbox {
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;
+	color: #cccccc;
+	text-decoration: none;
+}
+
+
