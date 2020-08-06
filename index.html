@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GAME OF THRONES</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+
+<body>
+    <main>
+      <h1 id="main-title">GAME OF THRONES</h1>
+    <section id="imageContainer">
+    	<div id="houseImages" style="right: 0">
+    		<img src="images/Stark.jpg"/>
+    		<img src="images/Baratheon.jpg"/>
+    		<img src="images/Lannister.jpg"/>
+    		<img src="images/Tully.jpg"/>
+    		<img src="images/Greyjoy.jpg"/>
+            <img src="images/Arryn.jpg"/>
+            <img src="images/Targaryen.jpg"/>
+            <img src="images/Frey.jpg"/>
+            <img src="images/Tyrell.jpg"/>
+        </div>
+    </section>
+
+    <nav id="mainNav">
+    	<ul id="navList">
+
+            <li><div class="sigilContain stark" data-offset="0"></div></li>
+            <li><div class="sigilContain baratheon" data-offset="1"></div></li>
+            <li><div class="sigilContain lannister" data-offset="2"></div></li>
+            <li><div class="sigilContain tully" data-offset="3"></div></li>
+            <li><div class="sigilContain greyjoy" data-offset="4"></div></li>
+            <li><div class="sigilContain arryn" data-offset="5"></div></li>
+            <li><div class="sigilContain targaryen" data-offset="6"></div></li>
+            <li><div class="sigilContain frey" data-offset="7"></div></li>
+            <li><div class="sigilContain tyrell" data-offset="8"></div></li>
+        </ul>
+    </nav>
+
+    <h1 id="house-name">THE GREAT HOUSES</h1>
+
+    <p class="house-info"></p>
+
+    <section class="lightbox">
+    	<a href="#" class="close-lightbox">X</a>
+
+    	<video class="house-video" src="video/House-Stark.mp4" type="video/mp4"></video>
+        <div class="video-controls">
+            <h5 class="hidden">controllers</h5>
+
+            <button id="play-pause"><i class="fas fa-pause"></i></button>
+            <button id="play-button" class="hidden"><i class="fas fa-play"></i></button>
+
+            <input id="progress-bar" type="range" min="0" max="100" value="0" step="1">
+
+            <div id="time"><span id="current-time"></span> / <span id="duration-time"></span></div>
+
+            <button id="volume-button"><i class="fas fa-volume-up"></i></button>
+            <input id="volume-slider" type="range" min="0" max="100" value="100" step="1">
+
+            <button id="full-screen"><i class="fas fa-expand"></i></button>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
